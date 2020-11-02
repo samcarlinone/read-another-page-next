@@ -37,7 +37,7 @@ const useStyles = createUseStyles(theme => ({
   },
 }))
 
-const ActionTiles = ({children}) => {
+const ActionTiles = () => {
   const classes = useStyles()
 
   const tiles = [
