@@ -32,13 +32,8 @@ const useStyles = createUseStyles(theme => ({
   },
   coverImage: {
     padding: 0,
-    '@media (min-width: 800px)': {
-      maxWidth: '30vmin',
-    },
-    '@media (min-width: 1280px)': {
-      maxWidth: '40vmin',
-    },
-    ...theme.imageBackgroundObject,
+    margin: 16,
+    overflow: 'hidden',
   },
   contentContainer: {
     display: 'flex',
@@ -130,13 +125,14 @@ const DetailView = ({ book }) => {
         <Link href="/">Home</Link>
       </AppBar>
       <div className={classes.detailsRoot}>
-        <Image
-          width={constants.IMAGE_WIDTH}
-          height={constants.IMAGE_HEIGHT}
-          src={`/covers/${slug}.jpg`}
-          alt={`Cover for ${title}`}
-          className={classnames(classes.coverImage, classes.card)}
-        />
+        <div className={classnames(classes.coverImage, classes.card)}>
+          <Image
+            width={constants.IMAGE_WIDTH * 2}
+            height={constants.IMAGE_HEIGHT * 2}
+            src={`/covers/${slug}-cover.jpg`}
+            alt={`Cover for ${title}`}
+          />
+        </div>
         <div className={classes.contentContainer}>
           <div className={classes.card}>
             <BookTitleBlock book={book} />

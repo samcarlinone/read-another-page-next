@@ -76,7 +76,7 @@ const BookCard = ({book}) => {
           <Image
             width={constants.IMAGE_WIDTH}
             height={constants.IMAGE_HEIGHT}
-            src={`/covers/${slug}.jpg`}
+            src={`/covers/${slug}-cover.jpg`}
             alt={`Cover for ${title}`}
           />
         </div>
