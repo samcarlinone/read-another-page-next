@@ -41,12 +41,11 @@ const Home = ({name, books}) => {
         <Divider className={classes.divider} />
         <div className={classes.cardContainer}>
           {books.map(book => (
-            <BookCard key={book.title} book={book} />
+            <BookCard key={book.slug} book={book} />
           ))}
         </div>
       </div>
     </div>
-    
   )
 }
 

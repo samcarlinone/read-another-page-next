@@ -7,6 +7,7 @@ import { books } from '../../components/data'
 import { BookTitleBlock, AppBar } from '../../components/home'
 import { ComposeWithTheme } from '../../components/shared'
 import { constants } from '../../components/data'
+import Head from 'next/head'
 
 const useStyles = createUseStyles(theme => ({
   detailsRoot: {
@@ -121,6 +122,9 @@ const DetailView = ({ book }) => {
 
   return (
     <>
+      <Head>
+        <title>{book.title} | Read Another Page</title>
+      </Head>
       <AppBar>
         <Link href="/">Home</Link>
       </AppBar>
@@ -131,6 +135,8 @@ const DetailView = ({ book }) => {
             height={constants.IMAGE_HEIGHT * 2}
             src={`/covers/${slug}-cover.jpg`}
             alt={`Cover for ${title}`}
+            priority={true}
+            loading="eager"
           />
         </div>
         <div className={classes.contentContainer}>

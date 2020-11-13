@@ -8,7 +8,7 @@ const sciFi = [
 ]
 
 const fantasy = [
-  {title: 'Harry Potter and the Sorcerer\'s Stone', author: 'J.K. Rowling', recommendationLevel: 3, slug: 'harry-potter', isbn: '9780780797086', ageRating: {age: ageRatings.KIDS}},
+  {title: 'Harry Potter and the Sorcerer\'s Stone', author: 'J. K. Rowling', recommendationLevel: 3, slug: 'harry-potter', isbn: '9780780797086', ageRating: {age: ageRatings.KIDS}},
 ]
 
 export default [
