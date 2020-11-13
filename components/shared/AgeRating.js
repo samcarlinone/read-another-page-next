@@ -2,6 +2,7 @@ import React from 'react'
 import { createUseStyles } from 'react-jss'
 import Crosshair from '../icons/Crosshair'
 import Plus from '../icons/Plus'
+import {ageRatings} from '../data'
 
 const useStyles = createUseStyles(theme => ({
   ageRatingContainer: {
@@ -56,8 +57,15 @@ const AgeRating = ({rating}) => {
     ? <div className={classes.icon}><Crosshair /></div>
     : <div className={classes.icon}><Plus /></div>
 
+  const widths = {
+    [ageRatings.EARLY]: 68,
+    [ageRatings.KIDS]: 70,
+    [ageRatings.TEEN]: 70,
+    [ageRatings.ADULT]: 76,
+  }
+
   return (
-    <div className={classes.ageRatingContainer}>
+    <div className={classes.ageRatingContainer} style={{width: widths[age]}}>
       <div className={classes.textBackground} />
       <div className={classes.text}>{age}</div>
       {symbol}
