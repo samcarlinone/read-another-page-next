@@ -64,8 +64,12 @@ const AgeRating = ({rating}) => {
     [ageRatings.ADULT]: 76,
   }
 
+  const title = aimedAt
+    ? `Written for ${age}`
+    : `${age} and Older`
+
   return (
-    <div className={classes.ageRatingContainer} style={{width: widths[age]}}>
+    <div className={classes.ageRatingContainer} style={{width: widths[age]}} title={title}>
       <div className={classes.textBackground} />
       <div className={classes.text}>{age}</div>
       {symbol}

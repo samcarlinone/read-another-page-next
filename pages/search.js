@@ -31,7 +31,7 @@ const useStyles = createUseStyles((theme) => ({
     margin: 16,
     gridGap: 16,
     display: 'grid',
-    gridTemplateColumns: `repeat(auto-fit, minmax(${theme.cardWidth}px, 1fr))`,
+    gridTemplateColumns: `repeat(auto-fit, ${theme.cardWidth}px)`,
   },
   noResults: {
     fontFamily: theme.fonts.patuaOne,

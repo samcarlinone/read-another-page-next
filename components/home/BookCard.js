@@ -5,6 +5,7 @@ import classNames from 'classnames/bind'
 import Image from 'next/image'
 import BookTitleBlock from './BookTitleBlock'
 import {constants} from '../data'
+import recommendationLevelTitle from './recommendationLevelTitle'
 
 const useStyles = createUseStyles(theme => ({
   container: {
@@ -82,7 +83,7 @@ const BookCard = ({book}) => {
         </div>
         <div className={classes.content}>
           <BookTitleBlock book={book} />
-          <div className={classes.recommendationLevel}>
+          <div className={classes.recommendationLevel} title={recommendationLevelTitle(recommendationLevel)}>
             <div className={classNames(classes.recommendationBar, { [classes.recommendationActive]: recommendationLevel >= 1 })}></div>
             <div className={classNames(classes.recommendationBar, { [classes.recommendationActive]: recommendationLevel >= 2 })}></div>
             <div className={classNames(classes.recommendationBar, { [classes.recommendationActive]: recommendationLevel >= 3 })}></div>

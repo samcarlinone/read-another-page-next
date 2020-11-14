@@ -52,9 +52,8 @@ const ActionTiles = () => {
     <div className={classes.scrollContainer}>
       <div className={classes.container}>
         {tiles.map(tile => (
-          <Link href={tile.link}>
+          <Link href={tile.link} key={tile.label}>
             <a
-              key={tile.label}
               className={classes.tile}
               tabIndex={0}
               target={tile.link.includes('http') ? '_blank' : ''}
