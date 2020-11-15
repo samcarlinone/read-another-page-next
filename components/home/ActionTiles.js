@@ -45,7 +45,7 @@ const ActionTiles = () => {
     {icon: '🔍', label: 'Search', link: '/search'},
     {icon: '📣', label: 'Give Feedback', link: 'https://forms.gle/hXPxqNvdv8fUhWAw7'},
     {icon: '📮', label: 'Suggest a Book', link: 'https://forms.gle/MzKaX4SYt5hjBdxL8'},
-    {icon: '📖', label: 'About ⚬ FAQ', link: '/about'},
+    {icon: '📖', label: 'About + FAQ', link: '/about'},
   ]
 
   return (
