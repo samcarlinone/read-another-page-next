@@ -58,8 +58,8 @@ const useStyles = createUseStyles((theme) => ({
     fontFamily: theme.fonts.patuaOne,
     fontSize: '2rem',
     borderRight: theme.border,
-    marginRight: 8,
-    paddingRight: 8,
+    marginRight: 16,
+    paddingRight: 16,
   },
   recommendationTitle: {
     fontFamily: theme.fonts.raleway,

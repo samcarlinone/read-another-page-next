@@ -41,11 +41,11 @@ const ActionTiles = () => {
   const classes = useStyles()
 
   const tiles = [
-    {icon: '🧭', label: 'Browse Genres', link: '/genres'},
+    // {icon: '🧭', label: 'Browse Genres', link: '/genres'},
     {icon: '🔍', label: 'Search', link: '/search'},
     {icon: '📣', label: 'Give Feedback', link: 'https://forms.gle/hXPxqNvdv8fUhWAw7'},
     {icon: '📮', label: 'Suggest a Book', link: 'https://forms.gle/MzKaX4SYt5hjBdxL8'},
-    {icon: '📖', label: 'About Us', link: '/about'},
+    {icon: '📖', label: 'About ⚬ FAQ', link: '/about'},
   ]
 
   return (
