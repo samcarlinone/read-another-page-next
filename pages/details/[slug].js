@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { createUseStyles } from 'react-jss'
 import classnames from 'classnames'
+import ReactMarkdown from 'react-markdown'
 import { books } from '../../components/data'
 import { BookTitleBlock, AppBar } from '../../components/home'
 import { ComposeWithTheme } from '../../components/shared'
@@ -48,6 +49,7 @@ const useStyles = createUseStyles((theme) => ({
     fontSize: '1rem',
     maxWidth: '40rem',
     lineHeight: '1.3rem',
+    margin: [-16, 0],
   },
   recommendation: {
     display: 'flex',
@@ -157,7 +159,11 @@ const DetailView = ({ book }) => {
             <BookTitleBlock book={book} />
           </div>
           <div className={classes.card}>
-            <div className={classes.description}>{description}</div>
+            <div className={classes.description}>
+              <ReactMarkdown>
+                {description}
+              </ReactMarkdown>
+            </div>
           </div>
           <div className={classnames(classes.card, classes.recommendation)}>
             <div className={classes.recommendationNumber}>{recommendationLevel}</div>
