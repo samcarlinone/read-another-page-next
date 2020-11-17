@@ -1,0 +1,1 @@
+export default `The story follows a kid exploring both alien worlds and strange new powers. Fast paced and action packed, one of the few books I remembered by name years after reading. However, this is definitely written for kids and older readers would be better off with other titles.`

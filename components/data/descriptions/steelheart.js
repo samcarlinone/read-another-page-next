@@ -1,0 +1,1 @@
+export default `Like a blend of *The Avengers* and *Oceans 11*, follow a small group of people fighting against impossible odds, with a surprising amount of tension for something that doesn’t take itself too seriously. From the amazing characters to the high stakes plot, this trilogy is a wild ride. One of my all time favorites.`

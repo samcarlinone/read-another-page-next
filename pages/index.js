@@ -20,6 +20,7 @@ const Home = () => {
       <BookRow books={books} name="Top Recommended" />
       <ActionTiles />
       <BookRow books={books.filter(book => book.genre === genres.SCIFI)} name="Science Fiction" />
+      <BookRow books={books.filter(book => book.genre === genres.FANTASY)} name="Fantasy" />
     </>
   )
 }

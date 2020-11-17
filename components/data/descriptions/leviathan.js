@@ -1,0 +1,3 @@
+export default `Historical fiction / steampunk set in the tense lead up to WWI. The two sides are divided by their choice of technology. On one side, we have the steam powered mechs and airships, the Clankers. On the other, biologically engineered beasts of war, the Darwinists. And in the middle we find a prince and heir to the Austro-Hungarian throne on the run and crossing paths with a commoner disguised as a boy in the British Air service.
+
+The only thing crazier than this premise is how well it works as kids / teen fiction. Between the technology, romance, drama, and political intrigue there is something here for almost any reader. That said, even older teens will have likely aged out of this story, as it is after all a kids book.`

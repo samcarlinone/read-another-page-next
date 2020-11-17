@@ -156,7 +156,7 @@ const DetailView = ({ book }) => {
         </div>
         <div className={classes.contentContainer}>
           <div className={classes.card}>
-            <BookTitleBlock book={book} />
+            <BookTitleBlock book={book} wide />
           </div>
           <div className={classes.card}>
             <div className={classes.description}>

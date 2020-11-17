@@ -1,0 +1,1 @@
+export default `A new dystopian science fiction series from Brandon Sanderson. Uses a mix of good characters and a mysterious world slowly revealed to keep you hooked. A good series, but doesn’t live up to Sanderson’s other works, at least for older readers.`
