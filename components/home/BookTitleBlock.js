@@ -18,7 +18,7 @@ const useStyles = createUseStyles(theme => ({
     justifyContent: 'space-between',
     alignItems: 'center',
 
-    position: 'relativel',
+    position: 'relative',
 
     marginBottom: 8,
   },

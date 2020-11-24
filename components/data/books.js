@@ -49,9 +49,34 @@ const fantasy = [
   {title: 'Foundryside', author: 'Robert Jackson Bennett', recommendationLevel: 3, slug: 'foundryside', isbn: '9780525573845', ageRating: {age: ageRatings.ADULT}, series: {name: 'The Founders Trilogy'}},
 ]
 
+const comics = [
+  {title: 'Calvin and Hobbes', author: 'Bill Waterson', recommendationLevel: 3, slug: 'calvin-and-hobbes', isbn: '9780740748479', ageRating: {age: ageRatings.KIDS}, series: {finished: true}},
+  {title: 'Lunch Lady and the Cyborg Substitute', author: 'Jarrett J. Krosoczka', recommendationLevel: 3, slug: 'lunch-lady', isbn: '9780375846830', ageRating: {age: ageRatings.KIDS, aimedAt: true}, series: {name: 'Lunch Lady', finished: true}},
+  {title: 'The Secret of the Unicorn', author: 'Hergé', recommendationLevel: 3, slug: 'tintin', isbn: '9780867199031', ageRating: {age: ageRatings.KIDS}, series: {name: 'The Adventures of Tintin', finished: true}},
+  {title: 'Asterix the Gaul', author: 'René Goscinny', recommendationLevel: 3, slug: 'asterix', isbn: '9780752866055', ageRating: {age: ageRatings.KIDS}, series: {name: 'Astérix', finished: true}},
+  {title: 'Akiko on the Planet Smoo', author: 'Mark Crilley', recommendationLevel: 3, slug: 'akiko', isbn: '9780440416487', ageRating: {age: ageRatings.KIDS}, series: {name: 'Akiko', finished: true}},
+  {title: 'Rapunzel\'s Revenge', author: 'Shannon Hale', recommendationLevel: 3, slug: 'rapunzels-revenge', isbn: '9781599900704', ageRating: {age: ageRatings.KIDS}, series: {finished: true}},
+  {title: 'The Stonekeeper', author: 'Kazu Kibuishi', recommendationLevel: 3, slug: 'amulet', isbn: '9780439846806', ageRating: {age: ageRatings.KIDS}, series: {name: 'Amulet'}},
+  {title: 'Understanding Comics: The Invisible Art', author: 'Scott McCloud', recommendationLevel: 3, slug: 'understanding-comics', isbn: '9780878162437', ageRating: {age: ageRatings.TEEN}, series: {name: 'The Comic Books', finished: true}},
+]
+
+const childrens = [
+  {title: 'Lost Treasure of the Emerald Eye', author: 'Geronimo Stilton', recommendationLevel: 3, slug: 'geronimo-stilton', isbn: '9780439559638', ageRating: {age: ageRatings.EARLY, aimedAt: true}, series: {name: 'Geronimo Stilton', finished: true}},
+  {title: 'Dinosaurs Before Dark', author: 'Mary Pope Osborne', recommendationLevel: 3, slug: 'magic-treehouse', isbn: '9780679824114', ageRating: {age: ageRatings.EARLY, aimedAt: true}, series: {name: 'Magic Tree House', finished: true}},
+  {title: 'The Boxcar Children', author: 'Gertrude Chandler Warner', recommendationLevel: 3, slug: 'the-boxcar-children', isbn: '9780807508527', ageRating: {age: ageRatings.EARLY, aimedAt: true}, series: {finished: true}},
+  
+]
+
+const nonFic = [
+  {title: 'Tattoos on the Heart', author: 'Gregory Boyle', recommendationLevel: 3, slug: 'tattoos-on-the-heart', isbn: '9781439153024', ageRating: {age: ageRatings.TEEN}, series: {single: true}},
+]
+
 const applyData = (array, genre) => array.map(b => ({ ...b, genre }))
 
 export default [
   ...applyData(sciFi, genres.SCIFI),
   ...applyData(fantasy, genres.FANTASY),
+  ...applyData(comics, genres.COMICS),
+  ...applyData(childrens, genres.KID),
+  ...applyData(nonFic, genres.NONFIC),
 ]
